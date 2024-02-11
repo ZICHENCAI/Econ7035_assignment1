@@ -18,6 +18,7 @@ def main(input1, input2, output):
 
     cleaned_df.to_csv(output, index=False)
     print(f"Data cleaned and saved to {output}")
+    print(f"The shape of the output DataFrame is: {cleaned_df.shape}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Clean data by merging and filtering.')
